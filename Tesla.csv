@@ -1,0 +1,214 @@
+,Date,User,Tweet,Comment,RT,Like,negative,neutral,positif,Statement,match_neg,match_neut,match_pos,Fin_statement
+0,2022-10-14 14:14:17+00:00,AVindman,.@LucidMotors makes pretty sweet electric cars. I hear these are MUCH better then @Tesla https://t.co/D9hELrrs42,67,141,922,0.0037129498,0.02543805,0.970849,0.970849,False,False,True,positif
+1,2022-10-14 04:57:58+00:00,RobertPicardo,"Cancelled my @Tesla order. If @elonmusk buys @twitter so he can help destroy America by restoring more “free speech” (hate speech, conspiracy theories, Trump-lies and sedition) to the platform, I’ll be happy with. @ChevyElectric . 🖖🏽 https://t.co/ChpZSmmqtt",68,28,784,0.72474223,0.23754293,0.037714895,0.72474223,True,False,False,negatif
+2,2022-10-14 01:23:37+00:00,Jason,"The @tesla FSD beta is very impressive 
+
+you really need to take it seriously if you want to keep it — they kick you out if you use a hand held device while driving or your inattentive (the software checks you on the cabin camera)
+
+Self driving drivers must be 100x safer that non https://t.co/nVeXqMZhCp",49,40,487,0.048394714,0.1836226,0.76798266,0.76798266,False,False,True,positif
+3,2022-10-14 01:07:26+00:00,hsumacher,First pic of the made in Germany Model Y for Taiwan in the parking lot of Tesla Neihu Center. @tesla @elonmusk https://t.co/30L4KYc9n4,28,35,524,0.0038358814,0.7407329,0.25543126,0.7407329,False,True,False,neutral
+4,2022-10-13 18:53:10+00:00,SawyerMerritt,Cathie Wood: @Tesla 'is a solution' to the economy's problems. https://t.co/56MUPLHGFj,72,197,1439,0.05819672,0.56098855,0.38081467,0.56098855,False,True,False,neutral
+5,2022-10-13 17:04:04+00:00,EstherKokkelman,A very high @Tesla T here in The Netherlands. Welcome in The Netherlands Tesla Utrecht! @elonmusk @Kristennetten (more to come) https://t.co/tA3QH2lvpy,24,39,375,0.0006599282,0.027044337,0.97229576,0.97229576,False,False,True,positif
+6,2022-10-13 16:45:12+00:00,EZebroni,The infamous yoke steering strikes again! Is this covered under warranty? @tesla @elonmusk https://t.co/hVYV21z2rR,113,21,333,0.6899334,0.29187194,0.018194607,0.6899334,True,False,False,negatif
+7,2022-10-13 15:37:50+00:00,trav_is_jackson,"To all my friends and followers, can you please help me identify the manufacturer of these @Tesla aftermarket wheels? I thought they were Martian's, but they don't come in gloss black on their website... 🔌🔋✌🏾 https://t.co/NPQAIM6TE9",32,18,233,0.33720633,0.57202476,0.09076889,0.57202476,False,True,False,neutral
+8,2022-10-12 22:28:53+00:00,BLKMDL3,Yoke peeling getting worse by the day. @Tesla Service will be swapping it out under warranty thankfully! https://t.co/GzGaLILOLN,28,1,168,0.2644226,0.4164486,0.3191288,0.4164486,False,True,False,neutral
+9,2022-10-12 20:41:17+00:00,SawyerMerritt,NEWS: Euro NCAP has found no evidence @Tesla attempted to cheat safety tests. @elonmusk https://t.co/gwT3yNLApD,27,109,1049,0.21171923,0.725542,0.06273874,0.725542,False,True,False,neutral
+10,2022-10-12 16:30:15+00:00,ajtourville,"$TSLA has developed in-house most of the core technology that runs all aspects of its business — basically, @Tesla chose to vertically integrate its own central nervous system that integrates &amp; streamlines all its business processes &amp; seamlessly executes its strategy. @elonmusk https://t.co/bybg5Vq2hr",29,44,438,0.008463221,0.34582162,0.6457151,0.6457151,False,False,True,positif
+11,2022-10-12 15:53:28+00:00,SawyerMerritt,"NEWS: @Tesla takes first step in motorsports, sponsors Texas A&amp;M EV racing team.
+
+""They (Tesla) will be providing us with cylindrical cells that we plan to use to manufacture our battery pack."" @elonmusk
+https://t.co/s2CmnlpPeu",25,57,705,0.0049986714,0.425236,0.5697653,0.5697653,False,False,True,positif
+12,2022-10-12 14:57:22+00:00,SawyerMerritt,"NEWS: @Tesla has signed a deal with Emergency Safety Solutions. The H.E.L.P program revolutionizes vehicle hazard warning systems, helping to prevent crashes into vulnerable cars &amp; occupants. Tesla’s the first passenger car company to implement the tech. https://t.co/nBQlI6y0X6",24,130,1012,0.0070426986,0.26241753,0.7305398,0.7305398,False,False,True,positif
+13,2022-10-12 03:57:10+00:00,RealTimBooth,Sang girl at the end of the world to my wife last night -first time in years- a song about accepting death - it takes place in a car crash. Today got rear ended by a @Tesla on the freeway. I thought they couldn't do that🤪 Shaken but not stirred.,73,7,438,0.56599045,0.3658907,0.06811885,0.56599045,True,False,False,negatif
+14,2022-10-11 23:59:40+00:00,noclador,"In short: the CEO of @Tesla and @SpaceX is doing secret deals with war criminals that sabotage the safety of the United States and lies about it when exposed.
+
+And that is JUST WHAT WE FOUND OUT TODAY about @elonmusk. https://t.co/vFhjyMW6S5",114,437,1893,0.9043114,0.09047763,0.0052109817,0.9043114,True,False,False,negatif
+15,2022-10-11 23:27:49+00:00,TerryGantnerWay,"Hey @elonmusk and @Tesla - you are currently holding my car hostage with zero communication from your service department, no way to reach them other than the app and no way for me to pick the car up and reschedule.  This is how you run a service business?",50,20,173,0.94962615,0.04731944,0.003054378,0.94962615,True,False,False,negatif
+16,2022-10-11 22:53:59+00:00,Tesla,Your Tesla now shows energy consumed vs projected &amp; gives range tips https://t.co/ABSPLTdGVg,429,547,6306,0.012298731,0.5184064,0.4692949,0.5184064,False,True,False,neutral
+17,2022-10-11 22:09:38+00:00,EforElectric,Look at the poor quality of a brand new @Tesla Model Y. I am baffled why people continue buying what appears to be one of the worst built cars in the recent automotive history. https://t.co/Dn4C7Zijsv,163,57,289,0.9693656,0.02734356,0.0032908677,0.9693656,True,False,False,negatif
+18,2022-10-11 19:12:27+00:00,SawyerMerritt,"NEWS: @Tesla is still dominating the luxury segment, which includes internal combustion engine (ICE) vehicles. Tesla’s 298,383 registrations is nearly 90,000 units ahead of second place BMW which has 211,118 registrations in the same time period.
+https://t.co/nX8PVuuuHi",25,68,592,0.00631732,0.23281139,0.7608713,0.7608713,False,False,True,positif
+19,2022-10-11 18:48:54+00:00,SarasvuoJari,I'll sell my @Tesla. https://t.co/y4aKbRCOTe,159,28,1119,0.22115508,0.7050541,0.07379082,0.7050541,False,True,False,neutral
+20,2022-10-11 18:04:54+00:00,live_munro,"We may be wrapping up our @Tesla 4680 teardown, but we know that there's still more you want to know about the structural pack and the cells themselves. We'll be filming a 4680 Q&amp;A session soon, so drop your questions below!
+
+#MunroLive #SandyMunro #TeardownTitan #Tesla #ModelY https://t.co/rk8VwGYY94",34,24,282,0.009476793,0.6139434,0.37657988,0.6139434,False,True,False,neutral
+21,2022-10-11 17:27:04+00:00,reedgalen,"Federal, state and local government agencies should IMMEDIATELY END all subsidies, tax rebates or other prices supports for @Tesla. @elonmusk can play his games with Putin’s money. #Ukraine",26,430,1603,0.74499595,0.23911864,0.015885478,0.74499595,True,False,False,negatif
+22,2022-10-11 16:46:21+00:00,EvasTeslaSPlaid,I believe in Tesla. You? @Tesla https://t.co/0NsP92NMg7,140,75,669,0.0036977527,0.15751688,0.8387854,0.8387854,False,False,True,positif
+23,2022-10-11 16:14:00+00:00,W7VOA,"Before tweeting a proposal to end the #UkraineRussiaWar, @ElonMusk spoke to #Russia President Putin, according to @ianbremmer who says the @Tesla CEO told him Putin is “prepared to negotiate"" if Crimea, Luhansk, Donetsk, Kherson and Zaporizhzhia remain Russian territory.",78,121,222,0.16941608,0.79246557,0.038118362,0.79246557,False,True,False,neutral
+24,2022-10-11 15:50:47+00:00,mzjacobson,"A turbine prototype (14 MW) just broke a 24-hour wind power world record (359 MWh)
+
+""enough energy for a mid-sized electric vehicle – @Tesla Model 3 – to drive around 1.8 million km""
+
+https://t.co/nOlp2GVudj @michelle0728 @SiemensGamesa #WWS #WindWaterSolar @Energy @USCleanPower",19,62,192,0.019706385,0.49525502,0.48503864,0.49525502,False,True,False,neutral
+25,2022-10-11 15:50:00+00:00,Tesla,"Now operating 10k+ Supercharger posts across Europe
+
+📸 @MinimalDuck https://t.co/9c8riIZmPm",322,466,5522,0.0070090983,0.80278784,0.19020313,0.80278784,False,True,False,neutral
+26,2022-10-11 15:00:36+00:00,jeremyjudkins_,"If this doesn’t convince you that you need Tesla Solar and Powerwalls, then I don’t know what will. 
+
+8 successful days off grid after a direct hit from Hurricane Ian @elonmusk @TeslaSolar @Tesla https://t.co/Yre3pNvNVF",52,126,686,0.11405133,0.57950145,0.30644718,0.57950145,False,True,False,neutral
+27,2022-10-11 12:51:05+00:00,EvasTeslaSPlaid,So proud of @Tesla &amp; Elon. Tesla makes the absolute best &amp; safest cars ever. Love my Plaid. @elonmusk ♥️ https://t.co/fV3vsXyEEo,66,40,385,0.0016107471,0.0058441,0.9925452,0.9925452,False,False,True,positif
+28,2022-10-11 12:42:00+00:00,WR4NYGov,Thank you @elonmusk @baglino @KirkhornZach @MartinViecha @tesla https://t.co/EZBnCmHdeQ,60,42,464,0.0033713998,0.097794294,0.8988342,0.8988342,False,False,True,positif
+29,2022-10-11 12:33:05+00:00,ValaAfshar,"This is the Tesla humanoid robot in 2022. 
+
+@Tesla is arguably the world’s most advanced hardware and software AI company.
+
+By 2030, the capabilities of Optimus will be unimaginable. https://t.co/TCaxc7JONU",110,98,624,0.010264264,0.15127392,0.8384619,0.8384619,False,False,True,positif
+30,2022-10-11 09:40:13+00:00,EstherKokkelman,I arranged a runway of an airport in The Netherlands to film one of the first @Tesla model S plaids in Europe. Should I post that film here?😁@elonmusk @WholeMarsBlog @vincent13031925 @Kristennetten,34,11,197,0.008859871,0.69585377,0.29528627,0.69585377,False,True,False,neutral
+31,2022-10-11 04:25:16+00:00,SawyerMerritt,"NEWS: The @Tesla Model S and Model X have both been granted purchase tax exemptions in China by the Ministry of Industry and Information Technology.
+
+Source: https://t.co/hICUFa1oBJ
+
+h/t @zhongwen2005 https://t.co/adeTAKuiil",47,116,1031,0.003853587,0.42849067,0.56765574,0.56765574,False,False,True,positif
+32,2022-10-11 02:51:53+00:00,Gfilche,fwiw I don’t think $TSLA should do a share buyback. smart to have a $10B+ reserve with this many global factories. also flexibility to invest in new crazy projects @elonmusk @MartinViecha @Tesla,113,32,609,0.2867015,0.52506095,0.18823756,0.52506095,False,True,False,neutral
+33,2022-10-10 22:59:22+00:00,EvasTeslaSPlaid,Sexiest &amp; fastest car on the planet will be made by Tesla. Red Roadster. Agree? @elonmusk @Tesla https://t.co/QQmPe3eA52,141,59,619,0.0021595848,0.061560377,0.93628,0.93628,False,False,True,positif
+34,2022-10-10 22:06:50+00:00,TheWickedZen,"Wow, buying a #Tesla was a big mistake. I'm paying big bucks for something that's basically alpha level software... it mostly tends to work right, but no guarantees. @Tesla isn't even standing by their work. The service center doesn't even care that they're losing my business.",91,37,304,0.707969,0.22347176,0.06855923,0.707969,True,False,False,negatif
+35,2022-10-10 21:57:49+00:00,WR4NYGov,"Tesla Roadside and Tesla Service saved my ass today. 
+
+Thank you @elonmusk @baglino @KirkhornZach @MartinViecha 
+
+@tesla https://t.co/9cOorlCIiT",21,8,220,0.010075456,0.050095674,0.9398289,0.9398289,False,False,True,positif
+36,2022-10-10 18:29:29+00:00,Willy_Guzman,"It’s official, @Tesla  is trash! Anytime I’ve even needed assistance with their customer service or roadside assistance they are of no help and brush me off. Never again will I buy a Tesla.",75,49,339,0.965895,0.029278994,0.004826001,0.965895,True,False,False,negatif
+37,2022-10-10 18:21:23+00:00,SawyerMerritt,"BREAKING: For the first time ever, the @Tesla Model Y was the best selling car in Germany in September, beating out VW Golf.
+
+Battery electric vehicles achieved a 20% market share in September. 44% of the top-10 best selling vehicles in September were BEVs. https://t.co/yvZ5RyiXzG",137,567,3258,0.0016836331,0.051442876,0.9468735,0.9468735,False,False,True,positif
+38,2022-10-10 13:18:05+00:00,hwfeinstein,Sent to me by @aaron54514022 “Well the storm took everyone’s roof on sanibel and captiva….. except my aunt… the only house on the island with the Tesla roof 😂” @elonmusk @tesla @WholeMarsBlog https://t.co/QyVOg4acv2,46,112,798,0.2606736,0.60197943,0.13734694,0.60197943,False,True,False,neutral
+39,2022-10-10 11:53:29+00:00,EvasTeslaSPlaid,I fully believe in @Tesla because Tesla is my future. With me? https://t.co/XlgYs4BkdR,74,42,417,0.0012239111,0.023078334,0.9756977,0.9756977,False,False,True,positif
+40,2022-10-10 09:25:38+00:00,GraemeMatthews,"Hey @elonmusk, brand new Model Y @Tesla, 3 service calls and still a touch screen that doesn't work!!! Not good enough #tesla #ModelY #NotGoodEnough https://t.co/R9LHGXJkt4",39,21,129,0.9714562,0.025935749,0.0026080753,0.9714562,True,False,False,negatif
+41,2022-10-09 23:48:22+00:00,ajtourville,"FYI — If you need a set of winter tires for your @Tesla Model 3, the 18"" Aero Wheel and Winter Tire Package priced at CAD$2,860 is a great deal w/ much better value than Costco Canada.
+
+If you're also a $TSLA shareholder, it's even more of a no-brainer to buy directly from Tesla! https://t.co/JFfnYhV3cA",19,15,188,0.0021609224,0.037520174,0.96031886,0.96031886,False,False,True,positif
+42,2022-10-09 23:02:07+00:00,F9Block5,"Taking photos of Teslas are so fun ⚡️
+
+@tesla @elonmusk https://t.co/e6WTJNkVHE",22,13,170,0.0018513794,0.025672447,0.9724762,0.9724762,False,False,True,positif
+43,2022-10-09 22:44:31+00:00,mor10,"Out for a walk along Kingsway and spotted this: about $1 million worth of @Tesla Model Y sitting in a used car lot. The one closest to the camera is a 2022 model with 100km on the odometer priced at $105k. In this economy, who's going to pay $100,000 for a used car??? https://t.co/4JahI1hXCw",77,20,292,0.39711422,0.5042783,0.09860747,0.5042783,False,True,False,neutral
+44,2022-10-09 17:38:44+00:00,SacksOnSacks,"A @Tesla employee recently told me that their Fremont employee parking lot gets full 30min before his shift starts, so he has to Uber to work. Funny that @elonmusk can't even handle traffic at his own factory. Why would anyone trust him with transportation solutions?",14,44,584,0.85893667,0.12558872,0.015474666,0.85893667,True,False,False,negatif
+45,2022-10-09 10:01:40+00:00,bentv_sh,"Latest news: Tesla's Shanghai mega-factory delivered more than 83,000 units in September, setting a new monthly delivery record🚗🚗🚗🚗🚗🚗🚗🚗 @Tesla
+#TeslaShanghai 
+#WuWa https://t.co/tmV1zIkhPi",34,120,1065,0.001753208,0.09860623,0.8996406,0.8996406,False,False,True,positif
+46,2022-10-09 08:38:55+00:00,hiromichimizuno,"Who would be lucky one to drive first @tesla Semi for  @Pepsi? 
+
+You would look super cool ( or hot !) on the roads and make other drivers jealous!! https://t.co/OVFxLrTIax",21,18,302,0.0035535367,0.031084321,0.96536213,0.96536213,False,False,True,positif
+47,2022-10-09 05:04:16+00:00,RenataKonkoly,"Sorry... I had to 😅😁
+
+@kanyewest @elonmusk @Tesla https://t.co/oKGkEX0t5U",34,21,171,0.086059354,0.535293,0.37864769,0.535293,False,True,False,neutral
+48,2022-10-09 03:17:30+00:00,BLKMDL3,"Approaching 130,000 miles in my @Tesla Model 3. Have enjoyed every single mile. https://t.co/ys45rR2x5i",50,52,1049,0.001235308,0.01998436,0.97878027,0.97878027,False,False,True,positif
+49,2022-10-08 15:59:26+00:00,FthePump1,"How is your Saturday morning?
+@Tesla @TeslaClubSoCal @LucidMotors @ThanksDirector @LenDevanna @Ford @jimfarley98 @elonmusk https://t.co/qsBkAfkIfy",31,41,417,0.013216234,0.8487463,0.13803744,0.8487463,False,True,False,neutral
+50,2022-10-08 13:39:05+00:00,kevinolearytv,What do @elonmusk #inflation @Twitter #DebtMarkets @Tesla #advertising and @SquawkCNBC have to do with each other? Find out! @BeckyQuick @andrewsorkin @JoeSquawk @CNBC https://t.co/s0fdqmuLAv,34,26,157,0.12486707,0.8337591,0.04137381,0.8337591,False,True,False,neutral
+51,2022-10-08 07:59:18+00:00,teslamarge,"7 days ago I accepted delivery of my new #TeslaModelS. 
+
+Words cannot express the immense gratitude I feel towards the people of @Tesla. 🫶
+
+Thank you from the bottom of my heart @elonmusk @woodhaus2 and the local delivery team for making my year. https://t.co/xNu8JPIvI5",52,26,369,0.0018157173,0.012001719,0.9861826,0.9861826,False,False,True,positif
+52,2022-10-08 06:43:34+00:00,the_economystic,"The only stock I own and have ever owned is from @Tesla. I used their stock purchase program and bought shares for 8 months before I quit. Still sitting out there on E-TRADE... maybe I should sell #TSLA for #EGLD? LOL 200 #retweets and I'll do it.
+
+@elonmusk vs. @beniaminmincu 🤔",31,211,224,0.07685378,0.5963834,0.32676283,0.5963834,False,True,False,neutral
+53,2022-10-08 04:12:31+00:00,somi_teslagirl,"My @Tesla politely waits for a car to pass before proceeding. 
+
+(Sound on for my reaction) https://t.co/gENZ9yzcce",106,307,3058,0.06255388,0.735599,0.2018471,0.735599,False,True,False,neutral
+54,2022-10-08 01:10:38+00:00,MissJilianne,"There are a lot of excellent deals on pre-owned Tesla’s on the @Tesla website.  Here’s a 2019 with ~32k miles, FSD, and an additional 1 year warranty for under $40K.  Sucha deal Blanch! https://t.co/aa4lQ7x8mQ",17,13,235,0.0015346823,0.031661574,0.9668037,0.9668037,False,False,True,positif
+55,2022-10-07 21:47:35+00:00,DirtyTesLa,Bahhh wasn't recording but trust me bro this was 100% beta. You can even see the little rollback it does on harder stops. It even had a little cat on the display and everything! #FSDBeta @tesla @elonmusk @aelluswamy https://t.co/1zf8uuarVm,25,14,288,0.011848504,0.3251534,0.662998,0.662998,False,False,True,positif
+56,2022-10-07 18:40:31+00:00,YoumotherFUDer,"Unless you experience #FSD 10.69.2.3 for yourself, nothing we say from this day forward, will resonate. 
+@Tesla, the updates massively improved everything. @chazman I gotta hear your take. @WholeMarsBlog dude! 
+
+&amp; @ValueAnalyst1 you gotta take 69.2.3 for a spin this weekend. 
+
+⚡️",14,8,142,0.03777322,0.3174127,0.6448141,0.6448141,False,False,True,positif
+57,2022-10-07 15:09:46+00:00,SawyerMerritt,"NEWS: @Tesla Giga Press maker, IDRA, have announced they have completed building and testing of the 9,000 ton Cybertruck Giga Press. https://t.co/6CKQTfXj2H",159,779,5495,0.005004954,0.81261903,0.18237597,0.81261903,False,True,False,neutral
+58,2022-10-07 14:06:38+00:00,alf_poor,"Congrats @elonmusk on the #electric semi-truck. @ideanomicshq's innovative wireless charging tech can help @Tesla and @pepsi unleash the full potential of these vehicles—able to charge a Class 8 in 15 min. You're a pioneering guy Elon, let's do this! https://t.co/tD4ocL8tDU https://t.co/uFnxGUfQoq",76,54,218,0.00096817577,0.019568108,0.9794637,0.9794637,False,False,True,positif
+59,2022-10-07 13:16:25+00:00,wanda_hudson,@Tesla Your stock share price is much lower than it’s worth.  Will you execute a buy-back?,24,14,202,0.73096335,0.25253266,0.016503979,0.73096335,True,False,False,negatif
+60,2022-10-07 06:25:03+00:00,JasonMaPhD,"Raise your hand if you think $TSLA will hit ATH by November 2022!
+
+Current situation:
+- S&amp;P Investment Grade upgrade
+- @Tesla Tesla Semi Truck production",115,15,226,0.02286807,0.64986527,0.32726666,0.64986527,False,True,False,neutral
+61,2022-10-07 05:05:58+00:00,teslaownersSV,.@elonmusk knows how to manage his time ruthlessly. I spent four hours with him on a day off and then he did an autopilot meeting with @tesla right after. The man works harder than anyone I’ve ever met and he’s doing out of a passion to see good things happen on earth https://t.co/r9jrfM1LBp,170,198,2217,0.024325743,0.11546793,0.8602063,0.8602063,False,False,True,positif
+62,2022-10-07 02:20:31+00:00,teslaownersSV,Summon is a life hack. No need to get into the car to move it forward or backward. @tesla @elonmusk https://t.co/ej9pRRErM2,31,30,326,0.49612492,0.4222781,0.08159697,0.49612492,True,False,False,negatif
+63,2022-10-07 02:09:23+00:00,Teslaconomics,"The Tesla Semi Truck was unveiled 4 years ago. 🚛⚡️
+
+Now it’s becoming a reality and will officially be delivered on December 1st to @pepsi. 
+
+@elonmusk and the @Tesla team gets shit done. 👊👊
+
+Let’s fuckin go. 🔥 
+
+$TSLA #Tesla https://t.co/mvodWnW2NS",39,64,474,0.047006227,0.18600583,0.766988,0.766988,False,False,True,positif
+64,2022-10-07 01:41:16+00:00,AukeHoekstra,"Yes!
+@Tesla Semi Truck production has started with first deliveries on december 1st!
+
+800 km range 40t truck
+
+I predict this will be a wake up call for the Trucking industry comparable to the Tesla Roadster and Model S combined.
+https://t.co/9pFA843CMi",49,114,565,0.0045180093,0.17113703,0.824345,0.824345,False,False,True,positif
+65,2022-10-06 14:49:04+00:00,MarcoRPTesla,"If anyone's wondering what's going on right now and why I'm so excited, it seems that Tesla has accidentally leaked addresses for virtually ALL future Superchargers in their Find Us lists (confirmed in the US and Canada). 
+
+@SawyerMerritt @Tesla @elonmusk
+
+https://t.co/Q1swxs2RLG",51,26,210,0.1618934,0.3923623,0.4457444,0.4457444,False,False,True,positif
+66,2022-10-06 12:57:12+00:00,DirtyTesLa,"Tight fit but #FSDBeta 10.69.2.3 handles it well!
+
+Full video 👉 https://t.co/hu9EgFER7J @tesla @elonmusk @aelluswamy https://t.co/XCq7AZQixv",15,24,239,0.0044201566,0.18359667,0.81198317,0.81198317,False,False,True,positif
+67,2022-10-06 11:22:56+00:00,jeremyjudkins_,"170 HOURS without Grid Power (and counting) thanks to Hurricane Ian. This is how I make my latte using Tesla Powerwalls. 
+
+I am so pleased how they can last the entire night and still have plenty of power left over.
+
+I still want to get two more installed!
+
+ @tesla @elonmusk https://t.co/3eNW5cH1NF",24,26,244,0.0114143845,0.09349118,0.8950944,0.8950944,False,False,True,positif
+68,2022-10-05 22:44:45+00:00,roger_kappler,"I don't know @tesla, I for one am glad that I still have Ultrasonic Sensors in my car... https://t.co/M6qYekjnKx",36,22,363,0.01845601,0.14471395,0.83682996,0.83682996,False,False,True,positif
+69,2022-10-05 22:12:43+00:00,Scobleizer,"Debris avoidance in the @tesla FSD beta. 
+
+I went back four times and it did it perfectly each time. Even with oncoming traffic. 
+
+I get why @WholeMarsBlog does so many videos of his drives. It is the most amazing piece of software of my life. By far. https://t.co/UHQwJGBAPk",65,150,1371,0.0040225917,0.022700373,0.9732771,0.9732771,False,False,True,positif
+70,2022-10-05 19:07:11+00:00,PulteDaily,Who else remember’s when @pulte gave away a @Tesla!? https://t.co/m7VQo7MAF3,183,91,1383,0.13475525,0.80209494,0.06314979,0.80209494,False,True,False,neutral
+71,2022-10-05 15:34:42+00:00,EvasTeslaSPlaid,I promise to support &amp; to be right next to $TSLA @Tesla &amp; Elon @elonmusk in absolute worse. If you don't stick together through the bad then you shouldn’t be together for the good. Are you with me? ♥️ https://t.co/Qh6PW48lBw,172,44,706,0.011989524,0.10507267,0.8829378,0.8829378,False,False,True,positif
+72,2022-10-05 13:39:07+00:00,WietseWind,"Got this @Tesla model 3 for ~three months now, and whenever I manoeuvre or take back the gas the entire thing reboots.
+
+All updates installed. Back to the dealer a couple of times now (1h drive, 1h back, pick up 1h + 1h). Now: ""not fixed, but maybe in a future firmware update"" 🤯 https://t.co/82WMts88gW",74,30,194,0.23893185,0.57119447,0.18987375,0.57119447,False,True,False,neutral
+73,2022-10-04 20:03:36+00:00,DirtyTesLa,"""Today, we are taking the next step in Tesla Vision by removing ultrasonic sensors (USS) from Model 3 and Model Y.""
+
+Wow. This was a big question for me. I find this even more wild than radar removal. Can't wait to see how it performs @elonmusk @tesla
+
+https://t.co/pZ3M0zbVPC",37,20,269,0.0042540594,0.03878963,0.95695627,0.95695627,False,False,True,positif
+74,2022-10-04 19:59:03+00:00,Kristennetten,"“Starting early October 2022, all Model 3 &amp; Model Y built for N America, Europe, Mide East &amp; Taiwan are no longer built w ultrasonic sensors &amp; instead rely solely on Tesla Vision to provide Autopilot, Enhanced Autopilot, FSD capability &amp; active safety features.” @Tesla @elonmusk",25,19,261,0.05679478,0.6498097,0.29339546,0.6498097,False,True,False,neutral
+75,2022-10-04 19:20:10+00:00,Tesla,"In addition, the sound system is highly configurable, which enables us to continually improve audio processing via software update",140,1208,2426,0.002150969,0.10939969,0.8884493,0.8884493,False,False,True,positif
+76,2022-10-04 19:20:10+00:00,Tesla,"Tesla Immersive, our multichannel audio upmixer, enables stereo content to be remixed in real time, optimizing the listening experience for our vehicles specifically",103,156,2227,0.0038338907,0.25459167,0.74157447,0.74157447,False,False,True,positif
+77,2022-10-04 19:20:09+00:00,Tesla,Tesla goal is maximum music dopamine! https://t.co/cN97gUdzmn,852,521,5114,0.012525662,0.36421221,0.6232621,0.6232621,False,False,True,positif
+78,2022-10-04 08:52:28+00:00,MikaIhamuotila,@elonmusk Disappointed to you. I will sell my @Tesla . Really bad judgement as most of your public opinions that are out of your own expertise. Please shut up @elonmusk,207,46,1679,0.94252497,0.052145433,0.005329577,0.94252497,True,False,False,negatif
+79,2022-10-04 06:50:21+00:00,DarthPutinKGB,Elon Musk planning to release new @Tesla for Russian market. It will reverse faster that it goes forward.,574,3508,42504,0.021101631,0.51421696,0.4646814,0.51421696,False,True,False,neutral
+80,2022-10-04 03:57:02+00:00,EmmetPeppers,"I hate driving in the dark, and for that reason especially love my FSD Beta.  
+Thank you @tesla and @elonmusk",37,13,357,0.059192408,0.17163561,0.76917195,0.76917195,False,False,True,positif
+81,2022-10-04 02:15:37+00:00,BLKMDL3,"Apparently this is “normal” and “Within Spec” on our Model S according to @Tesla service. I don’t think this is normal or within spec, a new luxury car shouldn’t make those noises. Other than that it was a great service experience today at Santa Monica. https://t.co/Bdbxy9JoFB",66,11,390,0.35387474,0.37747598,0.26864925,0.37747598,False,True,False,neutral
+82,2022-10-03 23:08:31+00:00,Tesla,"The brain of your Tesla: Neural networks with 1 billion parameters, completing 144 trillion operations per second https://t.co/Rao4mQDZoT",3869,4090,55439,0.016635144,0.69428355,0.28908136,0.69428355,False,True,False,neutral
+83,2022-10-03 22:51:43+00:00,RealDanODowd,"If Steve Jobs had unveiled @Apple’s iPhone in the same way @ElonMusk unveiled Optimus the @Tesla robot, it would have looked like this: https://t.co/55EbzcrvUc https://t.co/jjEOwioNtZ",152,139,1016,0.054430373,0.5699322,0.3756374,0.5699322,False,True,False,neutral
+84,2022-10-03 22:21:53+00:00,KemClawson,I hate doing this @elonmusk   but after almost 3 weeks @tesla has not refunded my money from a failed delivery of a new MY. On 9/15 you tried to deliver it with body damage. I did not accept. No replacement was offered promptly. I asked for full refund. I have no MY and no $$ now,209,163,1298,0.9699149,0.026638648,0.0034463143,0.9699149,True,False,False,negatif
+85,2022-10-03 21:25:40+00:00,teslaownersSV,"In @elonmusk’s 20s he was on a date and asked a girl if she thought about EVs… fast forward 30 years later, @tesla is the world leader in producing EVs and pushing us to a sustainable future. https://t.co/XIYzOfNjCz",102,51,533,0.0026892568,0.12192031,0.8753904,0.8753904,False,False,True,positif
+86,2022-10-03 08:07:32+00:00,elonmusk,"@PPathole @Tesla @SpaceX @neuralink @boringcompany I’m trying my hardest! Perhaps more people might consider loving humanity. 
+
+Our collective light of consciousness is a tiny candle in a vast darkness. Please do not let it go out.",732,1009,8206,0.05600087,0.3641711,0.5798281,0.5798281,False,False,True,positif
+87,2022-10-03 08:01:39+00:00,elonmusk,@cb_doge @Tesla Optimus will be sickkk,1491,876,31577,0.34668928,0.5390885,0.11422222,0.5390885,False,True,False,neutral
+88,2022-10-03 01:10:39+00:00,QuincyEdmundLee,"More tunnels!
+
+Riding the @boringcompany loop in a @tesla https://t.co/mIct7cIfA8",86,197,1630,0.021440776,0.73628473,0.2422745,0.73628473,False,True,False,neutral
+89,2022-10-02 23:07:16+00:00,Kristennetten,"Teslas *emergency door release handle* in the photo for all the FUD stating you get locked in a Tesla if it has no battery 🪫 charge left etc 🤨
+#Tesla $TSLA @Tesla https://t.co/8bk0WChFdK",27,36,291,0.43939778,0.46894357,0.091658615,0.46894357,False,True,False,neutral
+90,2022-10-02 16:30:17+00:00,SawyerMerritt,"So far in 2022, @Tesla has delivered almost 909,000 vehicles and produced nearly 930,000.
+
+In the whole of 2021 @Tesla delivered ~936,000 vehicles and produced 930,000. https://t.co/DRQd2YQNmb",94,225,1822,0.030123482,0.7301137,0.2397629,0.7301137,False,True,False,neutral
+91,2022-10-02 16:10:21+00:00,Ken_Goldberg,It’s not hard to see @ElonMusk’s logic;  @Tesla as a robotics company could justify much higher P/E than Tesla as a car company.  But robotics isn’t rocket science — it’s harder.  Glad to have @Tesla join the effort!,67,66,824,0.009992072,0.11172712,0.87828076,0.87828076,False,False,True,positif
+92,2022-10-02 15:56:37+00:00,SawyerMerritt,"BREAKING: @Tesla delivered an all-time high 343,830 vehicles in Q3.
+
+Total Q3 production was 365,923. Tesla also announced they will report Q3 earnings on October 29, 2022. https://t.co/I91Kai89vy",108,367,2529,0.0030373747,0.21767837,0.7792843,0.7792843,False,False,True,positif
+93,2022-10-02 15:04:52+00:00,elonmusk,"@OriolVinyalsML @Tesla @karpathy Thanks, we have a great team",405,269,7037,0.0022113062,0.020111538,0.97767717,0.97767717,False,False,True,positif
+94,2022-10-02 12:37:13+00:00,OriolVinyalsML,This neural network architecture that was showcased at the @Tesla AI day is a perfect example of Deep Learning at its finest. Mix and match all the greatest innovations to do something drastic and super ambitious. Congrats! https://t.co/1nZTwhAmFd,160,630,6173,0.0013499961,0.015635889,0.9830141,0.9830141,False,False,True,positif
+95,2022-10-02 01:39:04+00:00,greg16676935420,"@elonmusk @Tesla Just applied, thank you! https://t.co/3ZB398v2sf",46,14,852,0.0015295921,0.031515673,0.96695477,0.96695477,False,False,True,positif
+96,2022-10-01 19:05:54+00:00,Tesla,2k Model Y built at Giga Berlin this week 🤘 https://t.co/4u4I517wdV,2370,2483,38184,0.00441135,0.77167296,0.22391577,0.77167296,False,True,False,neutral
+97,2022-10-01 16:03:02+00:00,teslaownersSV,The Harris Ranch Supercharger is going to be amazing. 100 stalls with 250kW and stalls for towing. Grateful @TeslaCharging is always making the network better. @elonmusk @tesla https://t.co/vtefK6oAxT,46,102,900,0.0010569367,0.0122863725,0.98665667,0.98665667,False,False,True,positif
+98,2022-10-01 15:54:55+00:00,animesh_garg,"My thoughts on the Optimus Effort at AI day @Tesla 
+
+I made some notes on my takeaways. 
+https://t.co/KZsKKy6WRB https://t.co/dcNjOaj82y",31,52,352,0.06287512,0.8752446,0.0618803,0.8752446,False,True,False,neutral
+99,2022-10-01 15:36:30+00:00,GaryMarcus,"Sub-Optimal: Last night’s @Tesla demo, and why so many roboticists were underwhelmed.
+
+https://t.co/BnBNKfDlFj",38,55,236,0.6838577,0.28174585,0.034396525,0.6838577,True,False,False,negatif

@@ -35,34 +35,22 @@ header{
 }
 </style>
 """
-
+def get_month(dt):
+    return dt.month
+def count_rows(rows):
+    return len(rows)
 
 def plot_means_by_weekday(df):
-    domain = ["1.positif", "2.neutral", "3.negatif"]
-    range_ = ["green", "white", "red"]
-
-    bar_chart = alt.Chart(df).mark_bar().encode(
-        x=alt.X('week(Date):O', axis=alt.Axis(title='Week')),
-        y=alt.Y('count(sentiment_compound):Q', stack="normalize", axis=alt.Axis(title='Normalization')),
-        color=alt.Color("Fin_statement", scale=alt.Scale(domain=domain, range=range_)),
-        tooltip='count(sentiment_compound):Q'
-    )
-
-    st.altair_chart(bar_chart,use_container_width=True)
-
+    
     option = st.selectbox(
         'Choose the year',
-        ('2022', '2021', '2020'))
+        ('2022', '2021'))
     if (option=='2022'):
         df_year = df[(df['Year']==2022)]
         st.write(df_year)
         plot_bar_weekday_percent(df_year)
     elif (option=='2021'):
         df_year = df[(df['Year']==2021)]
-        st.write(df_year)
-        plot_bar_weekday_percent(df_year)
-    elif (option=='2020'):
-        df_year = df[(df['Year']==2020)]
         st.write(df_year)
         plot_bar_weekday_percent(df_year)
 
@@ -72,14 +60,14 @@ def plot_bar_weekday_percent(df):
 
     bar_chart_2 = alt.Chart(df).transform_aggregate(
         count='count()',
-        groupby=['Fin_statement', 'week']
+        groupby=['Fin_statement', 'Week']
     ).transform_joinaggregate(
         total='sum(count)',
-        groupby=['week'] 
+        groupby=['Week'] 
     ).transform_calculate(
         frac=alt.datum.count / alt.datum.total
     ).mark_bar().encode(
-        x=alt.X('week:O', axis=alt.Axis(title='Week')),
+        x=alt.X('Week:O', axis=alt.Axis(title='Week')),
         y=alt.Y('count:Q', stack="normalize", axis=alt.Axis(title="Percent", format="%")),
         color=alt.Color("Fin_statement", scale=alt.Scale(domain=domain, range=range_)),
         tooltip=[
@@ -90,16 +78,13 @@ def plot_bar_weekday_percent(df):
     st.altair_chart(bar_chart_2,use_container_width=True)
 
    
+def tweet_by_month(df):
+    df['month'] = df['Date'].map(get_month)
 
-def plot_means_by_months(df):
-
-    bar_chart = alt.Chart(df).mark_bar().encode(
-        x="month(Date):O",
-        y=alt.Y('mean(Statement):Q', stack="normalize"),
-        color="Fin_statement:N"
-    )
-    st.altair_chart(bar_chart,use_container_width=True)
-
+    st.header('Evolution of tweets per month')
+    df_tweets = df.groupby(by='month', as_index=False).apply(count_rows)
+    df_tweets.columns = ['Month', 'Number_of_tweets']
+    st.bar_chart(df_tweets, x='Month', y='Number_of_tweets')
 
 @st.cache(allow_output_mutation=True)
 def get_base64_of_bin_file(bin_file):
@@ -154,6 +139,15 @@ def couleur(*args, **kwargs):
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 
+def most_user(df, top_N):
+    titre('The most used champs')
+    header('You can change the value to see the most used champ in your game')
+    df_groupby = df['User'].value_counts().reset_index(name='counts')
+    fig = px.pie(df_groupby.head(top_N), values='counts', names='index', 
+                    title="Percentage of the most User",
+                    labels={"index": "Username", "counts": "Number of tweets"})
+    st.plotly_chart(fig,use_container_width=True)
+
 df = read("Tesla.csv")
 
 add_background('Noir.jpeg')
@@ -177,10 +171,18 @@ elif select == 'Visualisation':
         fig = px.pie(df_groupby, values="counts", names='index')
         st.plotly_chart(fig, use_container_width=True)
     with col2:
-        vizu('Percentage of the most User')
-        df_groupby = df['User'].value_counts().reset_index(name='counts')
-        fig = px.pie(df_groupby.head(5), values="counts", names='index')
-        st.plotly_chart(fig,use_container_width=True)
+
+        top_N = st.slider(
+            "",
+            min_value=5,
+            max_value=25,
+            value=10,
+            help="You can choose the number of users with the most tweets. Between 5 and 25, default number is 10.",
+            key = 10)
+        most_user(df, top_N)
+
+
+
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud
     wordcloud = WordCloud (
@@ -192,6 +194,9 @@ elif select == 'Visualisation':
     fig, ax = plt.subplots()
     plt.imshow(wordcloud)
     st.pyplot(fig)
+
+    tweet_by_month(df)
+
     header('This is the tweet with the most Like !')
     maxValueLike = df['Like'].idxmax()
     tweet1(df.at[maxValueLike,'User'])

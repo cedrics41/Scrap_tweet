@@ -1,6 +1,0 @@
-streamlit
-plotly
-matplotlib.pyplot
-wordcloud
-base64
-os

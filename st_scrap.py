@@ -78,7 +78,7 @@ def couleur(*args, **kwargs):
 @st.cache(allow_output_mutation=True)
 def read(df):
     return pd.read_csv(df, index_col=[0])    
-df = read("Scrap_tweet/Tesla.csv")
+df = read("Tesla.csv")
 
 add_background('Noir.jpeg')
 

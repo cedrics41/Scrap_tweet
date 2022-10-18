@@ -58,13 +58,11 @@ def tweet_by_month(df):
     df_tweets.columns = ['Month', 'Number_of_tweets']
     st.bar_chart(df_tweets, x='Month', y='Number_of_tweets')
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def get_img_with_href(local_img_path, target_url):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)

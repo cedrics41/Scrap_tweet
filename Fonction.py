@@ -15,7 +15,7 @@ from wordcloud import WordCloud, STOPWORDS
 def count_rows(rows):
     return len(rows)
 
-@st.cache
+@st.cache(suppress_st_warning = True)
 def plot_means_by_weekday(df):
     
     option = st.selectbox(

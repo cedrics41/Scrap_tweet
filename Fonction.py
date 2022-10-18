@@ -15,7 +15,6 @@ from wordcloud import WordCloud, STOPWORDS
 def count_rows(rows):
     return len(rows)
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
@@ -51,7 +50,6 @@ def plot_bar_weekday_percent(df):
     )
     st.altair_chart(bar_chart_2,use_container_width=True)
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def tweet_by_month(df):
     st.header('Evolution of tweets per month')
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
@@ -110,7 +108,6 @@ def most_user(df, top_N):
                     labels={"index": "Username", "counts": "Number of tweets"})
     st.plotly_chart(fig,use_container_width=True)
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def cloud(df):
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud

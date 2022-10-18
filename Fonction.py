@@ -51,7 +51,7 @@ def plot_bar_weekday_percent(df):
     st.altair_chart(bar_chart_2,use_container_width=True)
 
 def tweet_by_month(df):
-    st.header('Evolution of tweets per month')
+    header('Evolution of tweets per month')
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
     df_tweets.columns = ['Month', 'Number_of_tweets']
     st.bar_chart(df_tweets, x='Month', y='Number_of_tweets')
@@ -109,6 +109,7 @@ def most_user(df, top_N):
     st.plotly_chart(fig,use_container_width=True)
 
 def cloud(df):
+    header('This is a graph to represent the most words used in tweet')
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud
     wordcloud = WordCloud (
@@ -194,6 +195,7 @@ def all_vizu(df):
     cloud(df)
     tweet_by_month(df)
     sentiments(df)
+    header('In this graph we can see the sentiment analysis of those tweets')
     plot_means_by_weekday(df)
 
 def all_about_us():

@@ -4,6 +4,4 @@ matplotlib
 wordcloud
 pybase64
 pandas
-secure-smtplib
-ssl
 altair

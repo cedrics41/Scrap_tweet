@@ -15,6 +15,7 @@ from wordcloud import WordCloud, STOPWORDS
 def count_rows(rows):
     return len(rows)
 
+@st.cache
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
@@ -108,6 +109,7 @@ def most_user(df, top_N):
                     labels={"index": "Username", "counts": "Number of tweets"})
     st.plotly_chart(fig,use_container_width=True)
 
+@st.cache
 def cloud(df):
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud

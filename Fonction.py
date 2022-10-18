@@ -194,9 +194,9 @@ def all_vizu(df):
     most_user(df, top_N)
     cloud(df)
     tweet_by_month(df)
-    sentiments(df)
     header('In this graph we can see the sentiment analysis of those tweets')
     plot_means_by_weekday(df)
+    sentiments(df)
 
 def all_about_us():
     titre('About us')

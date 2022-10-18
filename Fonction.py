@@ -102,7 +102,6 @@ def titre(url):
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def most_user(df, top_N):
     header('You can change the value to see the most user tweet')
     df_groupby = df['User'].value_counts().reset_index(name='counts')

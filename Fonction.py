@@ -15,6 +15,7 @@ from wordcloud import WordCloud, STOPWORDS
 def count_rows(rows):
     return len(rows)
 
+@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
@@ -50,20 +51,20 @@ def plot_bar_weekday_percent(df):
     )
     st.altair_chart(bar_chart_2,use_container_width=True)
 
-   
+@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def tweet_by_month(df):
     st.header('Evolution of tweets per month')
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
     df_tweets.columns = ['Month', 'Number_of_tweets']
     st.bar_chart(df_tweets, x='Month', y='Number_of_tweets')
 
-@st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
-@st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def get_img_with_href(local_img_path, target_url):
     img_format = os.path.splitext(local_img_path)[-1].replace('.', '')
     bin_str = get_base64_of_bin_file(local_img_path)
@@ -103,6 +104,7 @@ def titre(url):
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 
+@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def most_user(df, top_N):
     header('You can change the value to see the most user tweet')
     df_groupby = df['User'].value_counts().reset_index(name='counts')
@@ -111,6 +113,7 @@ def most_user(df, top_N):
                     labels={"index": "Username", "counts": "Number of tweets"})
     st.plotly_chart(fig,use_container_width=True)
 
+@st.cache(allow_output_mutation=True, suppress_st_warning = True)
 def cloud(df):
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud

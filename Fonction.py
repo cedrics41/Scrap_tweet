@@ -18,7 +18,7 @@ def count_rows(rows):
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
-        'Choose the year please',
+        'Choose the year',
         ('2022', '2021'))
     if (option=='2022'):
         df_year = df[(df['Year']==2022)]
@@ -50,11 +50,11 @@ def plot_bar_weekday_percent(df):
     )
     st.altair_chart(bar_chart_2,use_container_width=True)
 
+@st.cache(allow_output_mutation = True)
 def tweet_by_month(df):
-    header('Evolution of tweets per month')
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
     df_tweets.columns = ['Month', 'Number_of_tweets']
-    st.bar_chart(df_tweets, x='Month', y='Number_of_tweets')
+    return df_tweets
 
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
@@ -97,6 +97,7 @@ def vizu(url):
 def titre(url):
      st.markdown(f'<p style="font-family:arial; color:White;text-align: center; font-size: 42px;font-weight: bold;">{url}</p>', unsafe_allow_html=True)
 
+@st.cache(allow_output_mutation = True, suppress_st_warning = True)
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 
@@ -108,8 +109,8 @@ def most_user(df, top_N):
                     labels={"index": "Username", "counts": "Number of tweets"})
     st.plotly_chart(fig,use_container_width=True)
 
+@st.cache
 def cloud(df):
-    header('This is a graph to represent the most words used in tweet')
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud
     wordcloud = WordCloud (
@@ -120,7 +121,7 @@ def cloud(df):
                 ).generate(' '.join(tweet))
     fig, ax = plt.subplots()
     plt.imshow(wordcloud)
-    st.pyplot(fig)
+    return fig
 
 def sentiments(df):
     header('This is the tweet with the most Like !')
@@ -146,9 +147,9 @@ def send_email():
 
     # Plain Text string as the email message
     header('Your Email Subject')
-    subject = st.text_input('')
+    subject = st.text_input('This is the subject', label_visibility = 'hidden')
     header('What is your message')
-    body = st.text_area('')
+    body = st.text_area('This is the body of the message', label_visibility='hidden')
 
     # Connect to the Gmail SMTP server and Send Email
     # Create a secure default settings context
@@ -185,15 +186,18 @@ def all_vizu(df):
     header('This is the number of tweet on the dataframe:')
     st.write(len(df.index))
     top_N = st.slider(
-        "",
+        "Check for the Slider",
         min_value=5,
         max_value=25,
         value=10,
         help="You can choose the number of users with the most tweets. Between 5 and 25, default number is 10.",
+        label_visibility = 'hidden',
         key = 10)
     most_user(df, top_N)
-    cloud(df)
-    tweet_by_month(df)
+    header('This is a graph to represent the most words used in tweet')
+    st.pyplot(cloud(df))
+    header('Evolution of tweets per month')
+    st.bar_chart(tweet_by_month(df), x='Month', y='Number_of_tweets')
     header('In this graph we can see the sentiment analysis of those tweets')
     plot_means_by_weekday(df)
     sentiments(df)

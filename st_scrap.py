@@ -31,7 +31,6 @@ header{
 
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-@st.cache(allow_output_mutation = True, suppress_st_warning = True)
 df = Fonction.read("Tesla.csv")
 
 Fonction.add_background('Noir.jpeg')

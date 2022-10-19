@@ -18,7 +18,7 @@ def count_rows(rows):
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
-        'Choose the year of',
+        '',
         ('2022', '2021'))
     if (option=='2022'):
         df_year = df[(df['Year']==2022)]
@@ -50,6 +50,7 @@ def plot_bar_weekday_percent(df):
     )
     st.altair_chart(bar_chart_2,use_container_width=True)
 
+@st.cache(allow_output_mutation = True)
 def tweet_by_month(df):
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
     df_tweets.columns = ['Month', 'Number_of_tweets']
@@ -88,7 +89,7 @@ def header(url):
      st.markdown(f'<p style="font-family:arial; text-align: justify; color:White; font-size: 15px;">{url}</p>', unsafe_allow_html=True)
 
 def tweet1(url):
-     st.markdown(f'<p style="font-family:arial; text-align: justify; color:Gray; font-size: 15px;">{url}</p>', unsafe_allow_html=True)
+     st.markdown(f'<p style="font-family:arial; text-align: justify; color:White; font-size: 15px;">{url}</p>', unsafe_allow_html=True)
 
 def vizu(url):
      st.markdown(f'<p style="font-family:arial; color:White; font-size: 14px;">{url}</p>', unsafe_allow_html=True)
@@ -96,18 +97,23 @@ def vizu(url):
 def titre(url):
      st.markdown(f'<p style="font-family:arial; color:White;text-align: center; font-size: 42px;font-weight: bold;">{url}</p>', unsafe_allow_html=True)
 
-@st.cache(allow_output_mutation = True, suppress_st_warning = True)
+def Subheader(url):
+     st.markdown(f'<p style="font-family:arial; color:White; font-size: 25px;font-weight: bold;">{url}</p>', unsafe_allow_html=True)
+def Subtweet(url):
+     st.markdown(f'<p style="font-family:arial; text-align: justify; color:Gray; font-size: 25px;">{url}</p>', unsafe_allow_html=True)
+
+@st.cache(hash_funcs={pd.DataFrame: lambda _: None})
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 
 def most_user(df, top_N):
-    header('You can change the value to see the most user tweet')
     df_groupby = df['User'].value_counts().reset_index(name='counts')
     fig = px.pie(df_groupby.head(top_N), values='counts', names='index', 
                     title="Percentage of the most User",
                     labels={"index": "Username", "counts": "Number of tweets"})
     st.plotly_chart(fig,use_container_width=True)
 
+@st.cache(allow_output_mutation = True, suppress_st_warning = True)
 def cloud(df):
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud
@@ -122,16 +128,16 @@ def cloud(df):
     return fig
 
 def sentiments(df):
-    header('This is the tweet with the most Like !')
+    Subtweet('This is the tweet with the most Like !')
     maxValueLike = df['Like'].idxmax()
     tweet1(df.at[maxValueLike,'User'])
     tweet1(df.at[maxValueLike,'Tweet'])
     tweet1(df.at[maxValueLike,'Like'])
-    header('This is the tweet the most positive !')
+    Subtweet('This is the tweet the most positive !')
     maxValuePos = df['sentiment_compound'].idxmax()
     tweet1(df.at[maxValuePos,'User'])
     tweet1(df.at[maxValuePos,'Tweet'])
-    header('This is the tweet the most negative !')
+    Subtweet('This is the tweet the most negative !')
     maxValueNeg = df['sentiment_compound'].idxmin()
     tweet1(df.at[maxValueNeg,'User'])
     tweet1(df.at[maxValueNeg,'Tweet'])
@@ -179,10 +185,12 @@ def home():
     with col2:
         st.image('tesla.jpeg', caption=None, width=500, use_column_width=None, clamp=False, channels='RGB', output_format='auto')
 
-def all_vizu(df):
+def all_vizu():
+    df = read("Tesla.csv")
     titre('Visualisation')
     header('This is the number of tweet on the dataframe:')
     st.write(len(df.index))
+    Subheader('You can change the value to see the most user tweet')
     top_N = st.slider(
         "Check for the Slider",
         min_value=5,
@@ -192,11 +200,15 @@ def all_vizu(df):
         label_visibility = 'hidden',
         key = 10)
     most_user(df, top_N)
-    header('This is a graph to represent the most words used in tweet')
+    Subheader('This is a graph to represent the most words used in tweet')
+    header('In this visualisation we can see the most word used is Tesla, Elon Musk or Car but also the word will or futur in order to think about the futur and we can say all these words is the image of the company')
     st.pyplot(cloud(df))
-    header('Evolution of tweets per month')
+    Subheader('Evolution of tweets per month')
+    header('We can see in this visualisation all tweet by month and we can see that user tweet the most at january, September and December')
     st.bar_chart(tweet_by_month(df), x='Month', y='Number_of_tweets')
-    header('In this graph we can see the sentiment analysis of those tweets')
+    Subheader('In this graph we can see the sentiment analysis of those tweets')
+    header("In this visualisation we can see the sentiment analysis algorithm and we can observe that Tesla don't have to many bad comments so we can conclude that Tesla don't have a bad brand image")
+    header('Choose the year')
     plot_means_by_weekday(df)
     sentiments(df)
 
@@ -204,8 +216,7 @@ def all_about_us():
     titre('About us')
     header("We are three students in the first year of a master's degree with a view to becoming a computer engineer, specializing in business intelligence and analytics.We chose the second subject that was offered to us because we prefer the field of data processing. This is why this project mixing our passion but also a technology that was unknown to us (scraping) attracted us so much.")
     col1, col2, col3, col4, col5 = st.columns([0.2,0.2,0.2,1,2])
-    url = "https://www.linkedin.com/in/cedric-song-7619b91a0/"
-    header('Our social Media')
+    header('Social Media of Tesla')
     col1, col2, col3, col4, col5 = st.columns([0.2,0.2,0.2,1,2])
     with col1:
         Insta_html = get_img_with_href("Insta.png", 'https://www.instagram.com/teslamotors/')
@@ -216,12 +227,12 @@ def all_about_us():
     with col3:
         Facebook_html = get_img_with_href('Facebook.png', 'https://www.facebook.com/TeslaMotorsCorp/')
         st.markdown(Facebook_html, unsafe_allow_html=True)
-def main(df):
+def main():
     select = st.sidebar.selectbox('Pages',['Home','Visualisation','About us','Contact us'], key = '1')
     if select == 'Home':
         home()
     elif select == 'Visualisation':
-        all_vizu(df)
+        all_vizu()
     elif select == 'About us':
         all_about_us()
     elif select == 'Contact us':

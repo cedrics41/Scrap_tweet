@@ -50,7 +50,7 @@ def plot_bar_weekday_percent(df):
     )
     st.altair_chart(bar_chart_2,use_container_width=True)
 
-@st.cache(allow_output_mutation = True)
+@st.cache(allow_output_mutation = True, suppress_st_warning = True)
 def tweet_by_month(df):
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
     df_tweets.columns = ['Month', 'Number_of_tweets']
@@ -102,7 +102,7 @@ def Subheader(url):
 def Subtweet(url):
      st.markdown(f'<p style="font-family:arial; text-align: justify; color:Gray; font-size: 25px;">{url}</p>', unsafe_allow_html=True)
 
-@st.cache(hash_funcs={pd.DataFrame: lambda _: None})
+@st.cache(hash_funcs={pd.DataFrame: lambda _: None}, allow_output_mutation=True, suppress_st_warning = True)
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 

@@ -18,7 +18,7 @@ def count_rows(rows):
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
-        'Choose the year',
+        'Choose the year of',
         ('2022', '2021'))
     if (option=='2022'):
         df_year = df[(df['Year']==2022)]

@@ -151,17 +151,23 @@ def send_email():
 
     # Plain Text string as the email message
     header('Your Email Subject')
-    subject = st.text_input('This is the subject', label_visibility = 'hidden')
+    subject = st.text_input('This is the subject', label_visibility = 'hidden', key = 7)
+    col1, col2 = st.columns(2)
+    with col1:
+        header('Your first name')
+        First_name = st.text_input('This is the First_name', label_visibility = 'hidden', key = 5)
+    with col2:
+        header('Your last name')
+        Last_name = st.text_input('This is the First_name', label_visibility = 'hidden', key = 6)
     header('What is your message')
-    body = st.text_area('This is the body of the message', label_visibility='hidden')
-
+    body = st.text_area('This is the body of the message', label_visibility='hidden', key = 8)
     # Connect to the Gmail SMTP server and Send Email
     # Create a secure default settings context
     context = ssl.create_default_context()
     # Connect to Gmail's SMTP Outgoing Mail server with such context
     if st.button('Send Email'):
         try:
-            message = "Subject:{}\n\n{}".format(subject,body)
+            message = "Subject:{}\n\n{}  {}\n\n{}".format(subject,First_name, Last_name, body)
             with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                 # Provide Gmail's login information
                 server.login(email_from, password)
@@ -169,14 +175,20 @@ def send_email():
                 server.sendmail(email_from, email_to, message)
                 st.success('Email Send Succefully !')
         except Exception as e:
-            if password == "":
-                st.error('Please Fill Password Field')
+            if subject == "":
+                st.error('Please Fill Subject Field')
+            elif First_name == "":
+                st.error('Please Fill First Name Field')
+            elif Last_name == "":
+                st.error('Please Fill Last Name Field')
+            elif body == "":
+                st.error('Please Fill Body Field')
             else:
                 a = os.system("ping google.com")
                 if a == 1:
                     st.error('Connect To Internet')
                 else:
-                    st.error('Wrong Email or Password')
+                    st.error("Don't use any special caractere like accent or emoji")
 
 def home():
     titre('Home Page')

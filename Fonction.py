@@ -102,7 +102,6 @@ def Subheader(url):
 def Subtweet(url):
      st.markdown(f'<p style="font-family:arial; text-align: justify; color:Gray; font-size: 25px;">{url}</p>', unsafe_allow_html=True)
 
-@st.cache(hash_funcs={pd.DataFrame: lambda _: None}, allow_output_mutation=True, suppress_st_warning = True)
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 

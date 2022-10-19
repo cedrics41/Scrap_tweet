@@ -1,5 +1,6 @@
 #pip install streamlit
 import streamlit as st
+import pandas as pd
 import Fonction
 
 st.set_page_config(page_title='Scraping Tesla', 
@@ -29,11 +30,11 @@ header{
 </style>
 """
 
+
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-df = Fonction.read("Tesla.csv")
 
 Fonction.add_background('Noir.jpeg')
 
 if __name__ == '__main__':
-    Fonction.main(df)
+    Fonction.main()

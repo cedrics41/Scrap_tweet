@@ -96,7 +96,7 @@ def vizu(url):
 def titre(url):
      st.markdown(f'<p style="font-family:arial; color:White;text-align: center; font-size: 42px;font-weight: bold;">{url}</p>', unsafe_allow_html=True)
 
-#@st.cache(allow_output_mutation = True, suppress_st_warning = True)
+@st.cache(allow_output_mutation = True, suppress_st_warning = True)
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 

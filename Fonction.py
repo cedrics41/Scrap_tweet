@@ -50,7 +50,6 @@ def plot_bar_weekday_percent(df):
     )
     st.altair_chart(bar_chart_2,use_container_width=True)
 
-@st.cache(allow_output_mutation = True)
 def tweet_by_month(df):
     df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
     df_tweets.columns = ['Month', 'Number_of_tweets']
@@ -97,7 +96,7 @@ def vizu(url):
 def titre(url):
      st.markdown(f'<p style="font-family:arial; color:White;text-align: center; font-size: 42px;font-weight: bold;">{url}</p>', unsafe_allow_html=True)
 
-@st.cache(allow_output_mutation = True, suppress_st_warning = True)
+#@st.cache(allow_output_mutation = True, suppress_st_warning = True)
 def read(df):
     return pd.read_csv(df, index_col=[0])  
 
@@ -109,7 +108,6 @@ def most_user(df, top_N):
                     labels={"index": "Username", "counts": "Number of tweets"})
     st.plotly_chart(fig,use_container_width=True)
 
-@st.cache
 def cloud(df):
     tweet = df.Tweet.replace('https://t.co/|https://', '', regex = True)
     # generate wordcloud

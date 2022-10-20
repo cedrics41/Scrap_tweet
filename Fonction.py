@@ -125,6 +125,7 @@ def cloud(df):
                 ).generate(' '.join(tweet))
     fig, ax = plt.subplots()
     plt.imshow(wordcloud)
+    plt.axis("off")
     return fig
 
 def sentiments(df):

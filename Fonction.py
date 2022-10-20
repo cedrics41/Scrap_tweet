@@ -18,13 +18,19 @@ def count_rows(rows):
 def plot_means_by_weekday(df):
     
     option = st.selectbox(
-        '',
-        ('2022', '2021'))
+        'Select year',
+        ('2022', '2021','2020','2019'))
     if (option=='2022'):
         df_year = df[(df['Year']==2022)]
         plot_bar_weekday_percent(df_year)
     elif (option=='2021'):
         df_year = df[(df['Year']==2021)]
+        plot_bar_weekday_percent(df_year)
+    elif (option=='2020'):
+        df_year = df[(df['Year']==2020)]
+        plot_bar_weekday_percent(df_year)
+    elif (option=='2019'):
+        df_year = df[(df['Year']==2019)]
         plot_bar_weekday_percent(df_year)
 
 def plot_bar_weekday_percent(df):

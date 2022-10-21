@@ -15,11 +15,10 @@ from wordcloud import WordCloud, STOPWORDS
 def count_rows(rows):
     return len(rows)
 
-def plot_means_by_weekday(df):
-    
+def plot_means_by_weekday(df): 
     option = st.selectbox(
         'Select year',
-        ('2022', '2021','2020','2019'))
+        ('2022', '2021','2020','2019','2018','2017','2016','2015'))
     if (option=='2022'):
         df_year = df[(df['Year']==2022)]
         plot_bar_weekday_percent(df_year)
@@ -31,6 +30,18 @@ def plot_means_by_weekday(df):
         plot_bar_weekday_percent(df_year)
     elif (option=='2019'):
         df_year = df[(df['Year']==2019)]
+        plot_bar_weekday_percent(df_year)
+    elif (option=='2018'):
+        df_year = df[(df['Year']==2018)]
+        plot_bar_weekday_percent(df_year)
+    elif (option=='2017'):
+        df_year = df[(df['Year']==2017)]
+        plot_bar_weekday_percent(df_year)
+    elif (option=='2016'):
+        df_year = df[(df['Year']==2016)]
+        plot_bar_weekday_percent(df_year)
+    elif (option=='2015'):
+        df_year = df[(df['Year']==2015)]
         plot_bar_weekday_percent(df_year)
 
 def plot_bar_weekday_percent(df):
@@ -57,9 +68,9 @@ def plot_bar_weekday_percent(df):
     st.altair_chart(bar_chart_2,use_container_width=True)
 
 @st.cache(allow_output_mutation = True, suppress_st_warning = True)
-def tweet_by_month(df):
-    df_tweets = df.groupby(by='Month', as_index=False).apply(count_rows)
-    df_tweets.columns = ['Month', 'Number_of_tweets']
+def tweet_by_year(df):
+    df_tweets = df.groupby(by='Year', as_index=False).apply(count_rows)
+    df_tweets.columns = ['Year', 'Number_of_tweets']
     return df_tweets
 
 def get_base64_of_bin_file(bin_file):
@@ -223,8 +234,8 @@ def all_vizu():
     header('In this visualisation we can see the most word used is Tesla, Elon Musk or Car but also the word will or futur in order to think about the futur and we can say all these words is the image of the company')
     st.pyplot(cloud(df))
     Subheader('Evolution of tweets per month')
-    header('We can see in this visualisation all tweet by month and we can see that user tweet the most at january, September and December')
-    st.bar_chart(tweet_by_month(df), x='Month', y='Number_of_tweets')
+    header('We can see in this visualisation all tweet by year and we can see that user tweet the most after 2017')
+    st.bar_chart(tweet_by_year(df), x='Year', y='Number_of_tweets')
     Subheader('In this graph we can see the sentiment analysis of those tweets')
     header("In this visualisation we can see the sentiment analysis algorithm and we can observe that Tesla don't have to many bad comments so we can conclude that Tesla don't have a bad brand image")
     header('Choose the year')

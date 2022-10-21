@@ -28,4 +28,16 @@ If you do the right thing technically you will have this screen when you run thi
 
 <img src="Home_page.png" width="500">
 
+## And what is other files ?
+
+All files with .png is for background or images for the website.
+
+The requirements.txt file is for installing all libraries we need.
+
+The scrap_every_day.py is a file who containe an algorith who every 02AM start and scrap tweet when Tesla is mentionned
+
+Twitter_snsscrap.ipynb is the file for scraping lot of datas
+
+and st_scrap.py and Fonction.py is the main files for the website
+
 # AND DON'T FORGET TO ENJOY !

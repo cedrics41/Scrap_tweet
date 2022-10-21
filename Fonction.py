@@ -233,7 +233,7 @@ def all_vizu():
     Subheader('This is a graph to represent the most words used in tweet')
     header('In this visualisation we can see the most word used is Tesla, Elon Musk or Car but also the word will or futur in order to think about the futur and we can say all these words is the image of the company')
     st.pyplot(cloud(df))
-    Subheader('Evolution of tweets per month')
+    Subheader('Evolution of tweets per year')
     header('We can see in this visualisation all tweet by year and we can see that user tweet the most after 2017')
     st.bar_chart(tweet_by_year(df), x='Year', y='Number_of_tweets')
     Subheader('In this graph we can see the sentiment analysis of those tweets')
